@@ -1,3 +1,7 @@
 #Weather App
 
-WeatherNow is a simple and intuitive weather application that provides real-time weather updates using data sourced from the OpenWeatherMap API. With a clean and user-friendly interface, WeatherNow allows users to effortlessly check the current weather conditions and forecasts for any location worldwide.
+Key Features:
+
+Location-Based Weather: Enter the name of a city or location to view the current weather conditions.
+Temperature Display: See the current temperature in Celsius along with a brief weather description.
+Minimalistic Design: The app features a clean and minimalistic design, focusing on providing essential weather information at a glance.
