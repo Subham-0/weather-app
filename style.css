@@ -3,34 +3,44 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f7f7f7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+.main-container {
+
+    width: 100%;
+    max-width: 500px;
+
+    /* Adjust the max-width as needed */
 }
 
 .weather-container {
-    margin: 100px 20px 50px 20px;
+    position: relative;
+    margin: 15px;
     background-color: #fff;
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    text-align: center;
+    transition: transform 1s, box-shadow 2s, font-size 2s;
+
 }
 
 .weather-container:hover {
-    border-radius: 10px;
-    padding: 40px;
-    box-shadow: 0 2px 10px rgb(230, 250, 8);
-
+    transform: scale(1.05);
+    box-shadow: 0 2px 10px rgb(0, 0, 0);
 }
 
 .weather-container:hover h2,
 .weather-container:hover p,
 .weather-container:hover .temperature {
-    font-size: 2.0em
-        /* Slightly increase font size */
+    font-size: 2.0em;
 }
 
 h2 {
@@ -51,9 +61,6 @@ p {
     color: #007bff;
 }
 
-
-
-
 .description {
     margin-top: 20px;
 }
@@ -61,10 +68,20 @@ p {
 .error-message {
     color: #ff0000;
     font-style: italic;
+
 }
 
 .creator {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
 
-    padding: 450px 0px 0px 200px;
+
+.creator p {
+
+    padding: 90% 0 0 0;
+    font-size: 14px;
+    color: #666;
 
 }
